@@ -1,1 +1,1 @@
-# PracticasJS
+# Practicas-JS

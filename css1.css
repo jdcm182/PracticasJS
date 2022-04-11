@@ -1,0 +1,59 @@
+/* Henry  Prep Course - CSS intermedio*/
+
+div {
+    display: block;
+    /*<valor de la propiedad>*/
+
+}
+
+/*
+// Elementos  "block"  Ej: (div, p)
+
+// Elementos  "inline" Ej:  (span, a, img)
+
+// Otros valores posibles de display:  none, grid, flex. 
+
+    No confundir:
+    display: none; desaparece el elemento y el espacio
+    visibility: hidden;  no muestra el elemento pero queda el espacio.
+
+*/
+
+
+div {
+    position: fixed;
+    /*<valor  de la propiedad>*/
+}
+
+/*
+// static
+
+// relative
+
+// fixed
+
+// absolute
+*/
+
+
+/* top, left, right,  and bottom */
+
+div {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+
+div {
+    position: relative;
+    top: 10;
+    left: 10;
+}
+
+
+
+/*
+position: absolute (top,  left..  en relacion al padre que no tenga static en su position  (relative por ej)) 1:35:00  de CSS intermedio prep.
+*/

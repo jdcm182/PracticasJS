@@ -1,0 +1,48 @@
+#ejercicioSiete {
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    position: relative;
+    background-color: black;
+    display: flex;
+}
+
+
+.elementos {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    background-color: white;
+}
+
+#elementoUno {
+    border: 3px dashed green;
+}
+
+#elementoDos {
+    border: 3px dashed orange;
+}
+
+#elementoTres {
+    border: 3px dashed blue;
+}
+
+#elementoCuatro {
+    border: 3px dashed red;
+}
+
+
+#jero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+body {
+    background-color: #37474F;
+}

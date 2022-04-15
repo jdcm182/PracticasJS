@@ -32,5 +32,21 @@ let dobles = arr.map((val) => val * 2);
 console.log('dobles: ', dobles);
 
 
+// ej map 1
+console.log('-----------------------------------');
+const products = [
+    { id: 'RVX1', name: 'Tshirt', price: 500 },
+    { id: 'RTA6', name: 'Shoes ', price: 2000 },
+    { id: 'RYB8', name: 'Shoes ', price: 1500 }
+];
 
+const productsDiscount = products.map(function (product) {
+    if (product.price < 1000) return product;
 
+    return {
+        ...product,
+        price: product.price * 0.9
+    };
+});
+
+products.forEach(({ price }) => console.log(price));

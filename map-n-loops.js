@@ -24,7 +24,8 @@ for (const iterator of arr) {
     console.log('for-of > iterator: ', iterator);
 }
 
-//map
+//map             // https://www.youtube.com/watch?v=tP8JiVUiyDo
+
 arr.map(function (val, i) { console.log('map > i: ', i, ' - val: ', val) });
 
 
@@ -33,7 +34,7 @@ console.log('dobles: ', dobles);
 
 
 // ej map 1
-console.log('-----------------------------------');
+console.log('\n--------------- ej map 1 ---------------');
 const products = [
     { id: 'RVX1', name: 'Tshirt', price: 500 },
     { id: 'RTA6', name: 'Shoes ', price: 2000 },
@@ -50,3 +51,44 @@ const productsDiscount = products.map(function (product) {
 });
 
 products.forEach(({ price }) => console.log(price));
+productsDiscount.forEach(({ price }) => console.log(price));
+
+
+
+// filter
+console.log('\n--------------- filter ---------------');
+const isCheap = product => product.price < 1000;
+const cheapProducts = products.filter(isCheap);
+console.log('cheapProducts: ', cheapProducts);
+
+
+const numbers = [1, 2, 3, 4, 3, 1];
+const uniqueNumbers = numbers.filter((number, position, numbers) => {
+    return position === numbers.indexOf(number);
+});
+console.log('numbers: ', numbers);
+console.log('uniqueNumbers: ', uniqueNumbers);
+
+
+
+// reduce
+console.log('\n--------------- reduce ---------------');
+const nums = [3, 10, 20, 50];
+let total = nums.reduce((accumulator, number) => {
+    return accumulator + number;
+}, 0);
+// to avoid second parameter make sure to check if you have an item
+// const accumulate = (accumulator, number) => accumulator + number;
+// let total = numbers.length > 0 ? numbers.reduce(accumulate) : 0;
+
+console.log('nums: ', nums);
+console.log('total: ', total);
+
+
+
+// map or filter using reduce    https://youtu.be/tP8JiVUiyDo?t=1258
+
+
+// encadenar functiones          https://youtu.be/tP8JiVUiyDo?t=1398
+// const precioTotalProductosBaratos = products.filter(isCheap).map(getPrice).reduce(accumulate);
+

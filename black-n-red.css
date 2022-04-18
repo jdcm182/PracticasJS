@@ -146,6 +146,29 @@ circle {
     */
 }
 
+#one {
+    stroke-dasharray: 300px;
+}
+
+#two {
+    stroke-dasharray: 10px;
+    animation-delay: 0.15s;
+    stroke: #E2007C;
+}
+
+#three {
+    stroke-dasharray: 450px;
+    animation-delay: 0.30s;
+    stroke: #404041;
+}
+
+#four {
+    stroke-dasharray: 550px;
+    animation-delay: 0.45s;
+    stroke: #E2007C;
+}
+
+
 @keyframes preloader {
     50% {
         transform: rotate(360deg);

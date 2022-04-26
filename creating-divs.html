@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Divs</title>
+    <link rel="stylesheet" href="creating-divs.css">
+</head>
+
+<body>
+    <div id="wrapper"></div>
+    <div class="box"></div>
+    <div id="add">+</div>
+    <script>
+        const wrapper = document.querySelector('#wrapper');
+        const addNewBox = function () {
+            const nodo = document.createElement('div');
+            nodo.className = 'box';
+            //nodo.innerHTML = 
+            wrapper.appendChild(nodo);
+        }
+
+        const addButton = document.getElementById('add');
+        addButton.addEventListener('click', addNewBox);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+#add {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin: 1px;
+}

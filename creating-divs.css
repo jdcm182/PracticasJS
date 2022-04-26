@@ -15,11 +15,16 @@
 
 }
 
+#wrapper {
+    /* display: flex;
+    flex-direction: row; */
+    /*display: inline-block;*/
+}
 
 .box {
     height: 100px;
     width: 100px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin: 1px;
 
     position: relative;

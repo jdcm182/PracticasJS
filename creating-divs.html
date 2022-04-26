@@ -17,12 +17,25 @@
 
     <script>
 
+        const grays = ["f8f9fa", "e9ecef", "dee2e6", "ced4da", "adb5bd", "6c757d", "495057", "343a40", "212529"];
+        const palette1 = ["cb997e", "ddbea9", "ffe8d6", "b7b7a4", "a5a58d", "6b705c"];
+        const pastel = ["fbf8cc", "fde4cf", "ffcfd2", "f1c0e8", "cfbaf0", "a3c4f3", "90dbf4", "8eecf5", "98f5e1", "b9fbc0"];
+        const flashy = ["ffbe0b", "fb5607", "ff006e", "8338ec", "3a86ff"];
+        const ocean = ["03045e", "023e8a", "0077b6", "0096c7", "00b4d8", "48cae4", "90e0ef", "ade8f4", "caf0f8"];
+        const palette2 = ["2b2d42", "8d99ae", "edf2f4", "ef233c", "d90429"];
+
+        const colors = palette2;
+
         const wrapper = document.querySelector('#wrapper');
         const addNewBox = function () {
-            const nodo = document.createElement('div');
-            nodo.className = 'box';
-            //nodo.innerHTML = 
-            wrapper.appendChild(nodo);
+            const box = document.createElement('div');
+            box.className = 'box';
+            //assign random color
+            let i = Math.floor(Math.random() * colors.length);//Math.random(0, colors.length - 1);
+            box.style.backgroundColor = `#${colors[i]}`;
+
+            //box.innerHTML = 
+            wrapper.appendChild(box);
         }
 
         const addButton = document.getElementById('add');

@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creating Divs</title>
     <link rel="stylesheet" href="creating-divs.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@700&display=swap');
+    </style>
 </head>
 
 <body>
+    <nav>
+        <input type="text" id="amount">
+        <button id="btnGenerate">Generate</button>
+    </nav>
     <div id="wrapper">
         <!-- <div class="box"></div> -->
     </div>
@@ -51,8 +58,6 @@
 
             });
 
-
-
             //box.innerHTML = 
             wrapper.appendChild(box);
             id++;
@@ -60,6 +65,21 @@
 
         const addButton = document.getElementById('add');
         addButton.addEventListener('click', addNewBox);
+
+        const inputAmount = document.getElementById('amount');
+        inputAmount.value = 100;
+        //const inputAmount = $('#amount').val();
+
+        const btnGenerate = document.getElementById('btnGenerate');
+        btnGenerate.addEventListener('click', () => {
+            //console.log('btnGenerate click!');
+            let amount = inputAmount.value;
+            //console.log('amount: ', amount);
+            let delay = 500;
+            for (let i = 0; i < amount; i++) {
+                setTimeout(function () { addNewBox(); }, delay);
+            }
+        });
 
 
         /*

@@ -1,15 +1,16 @@
 import logo from './logo.svg';
-import './App.css';
-import Header from 'header.jsx';
+import style from './App.module.css';
+import Nav from './components/Nav.jsx';
 
 function App() {
   return (
-    <div>
-      <Header>
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={style.App}>
+      <Nav>
+
+        <img src={logo} className={style.appLogo} alt="logo" />
 
         <p>';..;'</p>
-      </Header>
+      </Nav>
     </div>
   )
   /*

@@ -1,0 +1,95 @@
+body {
+    background: rgb(47, 53, 62);
+    background: linear-gradient(90deg, rgba(47, 53, 62, 1) 0%, rgba(36, 41, 50, 1) 100%);
+    border: 0;
+}
+
+.wrapper {
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    /* --radius: .75rem; */
+    --radius: 1.75rem;
+}
+
+.card,
+.card-top {
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.card,
+.card-bottom {
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.card {
+    width: 250px;
+    height: 450px;
+    border: 0px solid #333;
+    color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0px 8px 1px #0000009d;
+
+    transition-duration: 300ms;
+    /* transition-property: transform; */
+    transition-property: box-shadow;
+
+    /*  para posicionar boton X */
+    position: relative;
+}
+
+.card:hover {
+    /* transform: scale(1.025); */
+    box-shadow: 0 0px 15px 1px #0000006b;
+}
+
+.card-top {
+    background: rgb(73, 84, 238);
+    background: linear-gradient(0deg, rgba(73, 84, 238, 1) 0%, rgba(62, 151, 234, 1) 100%);
+    height: 45%;
+}
+
+.card-bottom {
+    background: rgb(47, 53, 62);
+    background: linear-gradient(145deg, rgba(47, 53, 62, 1) 0%, rgba(16, 23, 33, 1) 100%);
+    height: 55%
+}
+
+.card-top,
+.card-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+:root {
+    --btn-size: 1.75rem;
+}
+
+.close-btn {
+    width: var(--btn-size);
+    height: var(--btn-size);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #5f6775;
+    background: rgb(60, 68, 83);
+    background: linear-gradient(135deg, rgba(60, 68, 83, 1) 0%, rgba(21, 28, 40, 1) 100%);
+
+    box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.363);
+
+}
